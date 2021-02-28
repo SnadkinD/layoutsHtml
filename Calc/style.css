@@ -1,0 +1,125 @@
+*
+{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+TABLE {
+    margin-left: 90px;
+    width: 500px; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+}
+TD, TH {
+    font-size: 17px;
+    text-align: center;
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 2px solid black; /* Параметры рамки */
+}
+/*
+TH {
+    background: #b0e0e6;  Цвет фона 
+}    
+*/
+/*
+.table{
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+
+
+input[type=submit] {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+    margin-top: 15px;
+  border-radius: 3px;
+  background: #3498db;
+  box-shadow: 0 -3px #2E86C1 inset;
+  transition: 0.2s;
+} 
+input[type=submit]:hover { background: #2E86C1; }
+input[type=submit]:active {
+  background: #2E86C1;
+  box-shadow: 0 3px #2E86C1 inset;
+}
+input[type=text] {
+    font-size: 20px;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+header {
+    background-color: #3498db;
+    display: flex;
+    padding: 15px 5%;
+}
+
+
+.nav_links {
+    list-style: none;
+}
+
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #D0D3D4;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+
+
+.expression{
+    display: flex;
+    padding-left: 50px;
+    padding-top: 60px;
+}
+
+.result {
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.result p {
+    font-size: 35px;
+}

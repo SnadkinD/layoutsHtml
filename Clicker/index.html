@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="options">
+        <p id="hp">HP:</p>
+        <p id="iq">IQ:</p>
+        <p id="happiness">Happiness:</p>
+    </div>
+    <div class="buttons">
+        <button onclick="plusHP(4)">
+            Поесть
+        </button>
+        <button onclick="plusIQ(6)">
+            Поучиться
+        </button>
+        <button onclick="plusHappiness(4)">
+            Поспать
+        </button>
+        <br>
+        <button onclick="plusHP(4);plusIQ(4);plusHappiness(4)">
+            Сделать всё хорошо
+        </button>
+        <button>
+            Сохранить
+        </button>
+    </div>
+    <script>
+        let HP = 0;
+        let IQ = 0;
+        let Happiness = 0;
+        function update(){
+            document.getElementById('hp').innerText = 'HP: ' + HP;
+            document.getElementById('iq').innerText = 'IQ: ' + IQ;
+            document.getElementById('happiness').innerText = 'Happiness: ' + Happiness;
+        }
+        function plusHP(num){
+            HP += num;
+            console.log(HP)
+            update()
+        }
+        function plusIQ(num){
+            IQ += num;
+            console.log(IQ)
+            update()
+        }
+        function plusHappiness(num){
+            Happiness += num;
+            console.log(Happiness)
+            update()
+        }
+        update()
+    </script>
+</body>
+</html>
